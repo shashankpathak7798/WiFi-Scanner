@@ -101,8 +101,6 @@ class _HomeScreenState extends State<HomeScreen> {
                           children: [
                             Text(
                               '${network.ssid}',
-                              style: TextStyle(
-                                  fontSize: 18, fontFamily: 'NotoSans'),
                             ),
                             Text('${network.bssid}'),
                           ],

@@ -16,7 +16,13 @@ class MyApp extends StatelessWidget {
     const customTheme = CustomTheme();
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: customTheme.toThemeData(),
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        textTheme: TextTheme(
+          titleMedium: TextStyle(fontSize: 20, fontWeight: FontWeight.w700, color: Colors.black87,),
+          displaySmall: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.black45,),
+        ),
+      ),
       home: HomeScreen(),
     );
   }
